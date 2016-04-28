@@ -1,0 +1,33 @@
+{
+  "name": "carboneum/protocol-abstraction",
+  "type": "library",
+  "description": "Protocol agnostic request and response interfaces.",
+  "homepage": "http://github.com/carboneum/protocol-abstraction",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Aleksandr Obukhov",
+      "email": "a.a.obukhov@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/carboneum/contextual-exception"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "carboneum/contextual-exception": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "codeclimate/php-test-reporter": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Carboneum\\ProtocolAbstraction\\": "src",
+      "CarboneumTest\\ProtocolAbstraction\\": "test"
+    }
+  }
+}
