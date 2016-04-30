@@ -25,11 +25,7 @@ class ParameterSet implements ProtocolAbstraction\ParameterSet
     }
 
     /**
-     * @param string $key
-     *
-     * @throws Exception\ParameterSet\UnknownKeyException
-     *
-     * @return bool|float|int|string
+     * @inheritdoc
      */
     public function getParameter($key)
     {
@@ -41,8 +37,7 @@ class ParameterSet implements ProtocolAbstraction\ParameterSet
     }
 
     /**
-     * @param string $key
-     * @return bool
+     * @inheritdoc
      */
     public function hasParameter($key)
     {
@@ -50,7 +45,7 @@ class ParameterSet implements ProtocolAbstraction\ParameterSet
     }
 
     /**
-     * @return array
+     * @inheritdoc
      */
     public function getAllParameters()
     {

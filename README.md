@@ -37,7 +37,5 @@ Response
 TODO:
 -----
 
-  - [ ] Move doc blocks to interface definition
-  - [ ] Generic implementation for commands
   - [ ] Tests
   - [ ] CI integration

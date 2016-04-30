@@ -5,6 +5,10 @@ namespace Carboneum\ProtocolAbstraction\Generic;
 use Carboneum\ProtocolAbstraction;
 use Carboneum\ProtocolAbstraction\Exception\ParameterSet;
 
+/**
+ * Class Response
+ * @package Carboneum\ProtocolAbstraction
+ */
 class Response implements ProtocolAbstraction\Response
 {
     /**
@@ -13,7 +17,7 @@ class Response implements ProtocolAbstraction\Response
     protected $success;
 
     /**
-     * @var \Carboneum\ProtocolAbstraction\ParameterSet[]
+     * @var ProtocolAbstraction\ParameterSet[]
      */
     protected $parameterSets;
 
@@ -60,11 +64,7 @@ class Response implements ProtocolAbstraction\Response
     }
 
     /**
-     * @param string $name
-     *
-     * @throws ParameterSet\UnknownSetNameException
-     *
-     * @return ProtocolAbstraction\ParameterSet
+     * @inheritdoc
      */
     public function getParameterSet($name)
     {
@@ -76,7 +76,7 @@ class Response implements ProtocolAbstraction\Response
     }
 
     /**
-     * @return ProtocolAbstraction\ParameterSet
+     * @inheritdoc
      */
     public function getDefaultParameterSet()
     {
@@ -84,7 +84,7 @@ class Response implements ProtocolAbstraction\Response
     }
 
     /**
-     * @return \Traversable
+     * @inheritdoc
      */
     public function getPayloadReader()
     {
@@ -92,7 +92,7 @@ class Response implements ProtocolAbstraction\Response
     }
 
     /**
-     * @return bool
+     * @inheritdoc
      */
     public function isSuccess()
     {
@@ -100,7 +100,7 @@ class Response implements ProtocolAbstraction\Response
     }
 
     /**
-     * @return ProtocolAbstraction\ClientCommand[]
+     * @inheritdoc
      */
     public function getCommands()
     {

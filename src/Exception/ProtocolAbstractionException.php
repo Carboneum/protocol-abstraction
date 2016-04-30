@@ -4,6 +4,10 @@ namespace Carboneum\ProtocolAbstraction\Exception;
 
 use Carboneum\ContextualException\Exception;
 
+/**
+ * Class ProtocolAbstractionException
+ * @package Carboneum\ProtocolAbstraction
+ */
 class ProtocolAbstractionException extends Exception
 {
     const CODE_PACKAGE_PREFIX = 104000;

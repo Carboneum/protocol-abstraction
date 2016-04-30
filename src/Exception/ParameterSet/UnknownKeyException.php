@@ -4,11 +4,15 @@ namespace Carboneum\ProtocolAbstraction\Exception\ParameterSet;
 
 use Carboneum\ProtocolAbstraction\Exception\ProtocolAbstractionException;
 
+/**
+ * Class UnknownKeyException
+ * @package Carboneum\ProtocolAbstraction
+ */
 class UnknownKeyException extends ProtocolAbstractionException
 {
     const CODE = self::ERROR_CODE_UNKNOWN_PARAMETER_KEY;
 
-    const MESSAGE = 'ProtocolAbstraction: parameter name key {key} is not defined';
+    const MESSAGE = 'ProtocolAbstraction: parameter set key {key} is not defined';
     const KEY = 'key';
 
     /**

@@ -2,6 +2,9 @@
 
 namespace Carboneum\ProtocolAbstraction;
 
+use Carboneum\ProtocolAbstraction;
+use Carboneum\ProtocolAbstraction\Exception\ParameterSet;
+
 /**
  * Interface Message
  * @package Carboneum\ProtocolAbstraction
@@ -10,12 +13,15 @@ interface Message
 {
     /**
      * @param string $name
-     * @return ParameterSet
+     *
+     * @throws ParameterSet\UnknownSetNameException
+     *
+     * @return ProtocolAbstraction\ParameterSet
      */
     public function getParameterSet($name);
 
     /**
-     * @return ParameterSet
+     * @return ProtocolAbstraction\ParameterSet
      */
     public function getDefaultParameterSet();
 

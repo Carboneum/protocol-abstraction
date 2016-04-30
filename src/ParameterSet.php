@@ -10,7 +10,10 @@ interface ParameterSet
 {
     /**
      * @param string $key
-     * @return string|bool|int|float
+     *
+     * @throws Exception\ParameterSet\UnknownKeyException
+     *
+     * @return bool|float|int|string
      */
     public function getParameter($key);
 

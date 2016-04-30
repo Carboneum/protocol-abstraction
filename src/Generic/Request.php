@@ -52,11 +52,7 @@ class Request implements ProtocolAbstraction\Request
     }
 
     /**
-     * @param string $name
-     *
-     * @throws ParameterSet\UnknownSetNameException
-     *
-     * @return ProtocolAbstraction\ParameterSet
+     * @inheritdoc
      */
     public function getParameterSet($name)
     {
@@ -68,7 +64,7 @@ class Request implements ProtocolAbstraction\Request
     }
 
     /**
-     * @return \Carboneum\ProtocolAbstraction\ParameterSet
+     * @inheritdoc
      */
     public function getDefaultParameterSet()
     {
@@ -76,7 +72,7 @@ class Request implements ProtocolAbstraction\Request
     }
 
     /**
-     * @return \Traversable
+     * @inheritdoc
      */
     public function getPayloadReader()
     {
@@ -84,7 +80,7 @@ class Request implements ProtocolAbstraction\Request
     }
 
     /**
-     * @return string
+     * @inheritdoc
      */
     public function getTarget()
     {

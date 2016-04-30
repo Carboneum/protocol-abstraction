@@ -4,6 +4,10 @@ namespace Carboneum\ProtocolAbstraction\Exception\ParameterSet;
 
 use Carboneum\ProtocolAbstraction\Exception\ProtocolAbstractionException;
 
+/**
+ * Class UnknownSetNameException
+ * @package Carboneum\ProtocolAbstraction
+ */
 class UnknownSetNameException extends ProtocolAbstractionException
 {
     const CODE = self::ERROR_CODE_UNKNOWN_PARAMETER_SET_NAME;
